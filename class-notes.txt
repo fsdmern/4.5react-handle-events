@@ -1,0 +1,24 @@
+React Events:
+=============
+React Events are named using camelCase.
+While using JSX we pass a function as the event handler, rather than a string.
+React Events are cross-browser compatible
+
+//In Java Script
+<button onclick="showactiveusers()">Show active users</button>
+
+//In React
+<button onClick={showActiveUsers}>Show active users</button>
+
+Passing Arguments to Event Handlers:
+====================================
+<button onClick={(e) => this.deleteRow(id, e)}>Delete Row</button>
+<button onClick={this.deleteRow.bind(this,id)}>Delete Row</button>
+
+Conditional Rendering:
+======================
+
+Element Variables:
+==================
+This can help us conditionally render a part of component while rest of the output doesnt change
+
