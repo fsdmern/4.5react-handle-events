@@ -20,17 +20,20 @@ class LoginControl extends React.Component {
 
   render() {
     const isLoggedIn = this.state.isLoggedIn;
-    let button;
-    if (isLoggedIn) {
-      button = <LogoutButton onClick={this.handleLogoutClick} />;
-    } else {
-      button = <LoginButton onClick={this.handleLoginClick} />;
-    }
+
+    //Conditional rendering using if then else
+    // let button;
+    // if (isLoggedIn) {
+    //   button = <LogoutButton onClick={this.handleLogoutClick} />;
+    // } else {
+    //   button = <LoginButton onClick={this.handleLoginClick} />;
+    // }
 
     return (
       <div>
         <Greeting isLoggedIn={isLoggedIn} />
-        {button}
+        {isLoggedIn ? <LogoutButton onClick={this.handleLogoutClick} /> :
+        <LoginButton onClick={this.handleLoginClick} />}        
       </div>
     );
   }

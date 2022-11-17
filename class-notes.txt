@@ -18,7 +18,22 @@ Passing Arguments to Event Handlers:
 Conditional Rendering:
 ======================
 
-Element Variables:
-==================
+a. Element Variables:
+======================
 This can help us conditionally render a part of component while rest of the output doesnt change
+
+b. if then else
+===============
+
+b. inline if with Logical && Operator
+=======================================
+&& logical Operator is a shortcut to if then else statement
+
+c. Terenary operator 
+=====================
+condition1 ? ComponentA : ComponentB
+
+d. Prevent component from Rendering
+===================================
+We have to return null instead of output
 
